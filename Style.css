@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7ff;
+  color: #222;
+  line-height: 1.6;
+}
+
+header {
+  background: #10152f;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar {
+  max-width: 1100px;
+  margin: auto;
+  padding: 18px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #61dafb;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 22px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #61dafb;
+}
+
+.hero {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+  color: white;
+  background: linear-gradient(135deg, #141e50, #4568dc);
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.tag {
+  color: #61dafb;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+.hero h1 {
+  font-size: clamp(35px, 6vw, 60px);
+  margin-bottom: 10px;
+}
+
+.hero h1 span {
+  color: #61dafb;
+}
+
+.hero h2 {
+  margin-bottom: 15px;
+}
+
+.hero p {
+  margin-bottom: 25px;
+}
+
+.btn {
+  display: inline-block;
+  background: #61dafb;
+  color: #10152f;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: white;
+  transform: translateY(-3px);
+}
+
+.section {
+  padding: 75px 20px;
+  text-align: center;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section h2 {
+  font-size: 32px;
+  color: #263779;
+  margin-bottom: 35px;
+}
+
+.about-card,
+.contact-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+  max-width: 750px;
+  margin: auto;
+}
+
+.about-card {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  text-align: left;
+}
+
+.avatar {
+  font-size: 75px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+}
+
+.card {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(69,104,220,0.15);
+}
+
+.card h3 {
+  color: #263779;
+  margin-bottom: 12px;
+}
+
+.contact-card p {
+  margin-bottom: 15px;
+}
+
+.contact-card .btn {
+  margin-top: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #10152f;
+  color: white;
+}
+
+@media (max-width: 650px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .navbar ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .about-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .section {
+    padding: 55px 18px;
+  }
+}
